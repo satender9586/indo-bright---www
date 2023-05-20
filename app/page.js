@@ -1,15 +1,7 @@
 import React from "react";
-import { H3, HStack, Para, VStack } from "@/components/shared";
+import { VStack } from "@/components/shared";
 import { Section } from "@/components/section";
-import {
-  CATEGORIES,
-  FAQ_PROPS,
-  SECTION_HERO_PROPS,
-  SECTION_LAST_PROPS,
-  SECTION_ONE_PROPS,
-  SECTION_TWO_PROPS,
-} from "@/content/home";
-import { CategoryCard } from "@/components/category-card";
+import { FAQ_PROPS, SECTION_HERO_PROPS } from "@/content/home";
 import { FAQS } from "@/components/faqs";
 
 //
