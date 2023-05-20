@@ -20,13 +20,12 @@ export const SERVICES = [
       { label: "Goods and Service Tax", href: "/services/Goods and Service Tax" },
     ],
   },
-  {
-    label: "Growth",
-    services: [
-      { label: "ISO Certification", href: "/services/ISO Certification" },
-      { label: "IEC Certification", href: "/services/IEC Certification" },
-    ],
-  },
+  // {
+  //   label: "Growth",
+  //   services: [
+      
+  //   ],
+  // },
   {
     label: "Certifications",
     services: [
@@ -37,6 +36,8 @@ export const SERVICES = [
       { label: "MSME Registration", href: "/services/MSME Registration" },
       { label: "Udyam certification", href: "/services/Udyam certification" },
       { label: "ZED Certification", href: "/services/ZED Certification" },
+      { label: "ISO Certification", href: "/services/ISO Certification" },
+      { label: "IEC Certification", href: "/services/IEC Certification" },
     ],
   },
   {

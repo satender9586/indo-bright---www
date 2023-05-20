@@ -27,11 +27,11 @@ export const Footer = () => (
           </HStack>
         </VStack>
         <VStack className="md:flex-row gap-4 justify-between py-8 border-t border-white/25">
-          <Span className="text-white/50 text-xs">
+          <Span className="text-white/75 text-sm">
             Copyright © {new Date().getFullYear()} Indo Bright Services Pvt.
             Ltd.
           </Span>
-          <Span className="text-white/50 text-xs">
+          <Span className="text-white/75 text-sm">
             Designed & Developed by{" "}
             <Link
               href="https://honeyhexa.com"
