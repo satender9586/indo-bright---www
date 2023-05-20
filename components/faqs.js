@@ -2,9 +2,10 @@
 
 import * as Accordion from "@radix-ui/react-accordion";
 import { PageContainer } from "./shared";
+import { StructuredData } from "./structured-data";
 
 export const FAQS = ({ items }) => {
-  const jsonLd = {
+  const FAQ_JSON_LD = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: items.map((o) => ({
@@ -19,10 +20,7 @@ export const FAQS = ({ items }) => {
 
   return (
     <PageContainer>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <StructuredData jsonLd={FAQ_JSON_LD} />
       <Accordion.Root
         className="flex flex-col gap-4"
         type="multiple"
