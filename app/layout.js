@@ -5,11 +5,12 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Section } from "@/components/section";
 import { SECTION_LAST_PROPS } from "@/content/home";
+import { StructuredData } from "@/components/structured-data";
 
 export const metadata = {
   metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
   viewport: {
-    width: 'device-width',
+    width: "device-width",
     initialScale: 1,
     maximumScale: 1,
   },
@@ -21,7 +22,8 @@ export const metadata = {
     "Indo Bright Services is a startup and MSME solutions company. We provide services like web development, mobile app development, digital marketing, and many more.",
   openGraph: {
     title: "Indo Bright Services",
-    description: "Indo Bright Services is a startup and MSME solutions company. We provide services like web development, mobile app development, digital marketing, and many more.",
+    description:
+      "Indo Bright Services is a startup and MSME solutions company. We provide services like web development, mobile app development, digital marketing, and many more.",
     url: new URL(`https://${process.env.VERCEL_URL}`),
     siteName: "Indo Bright Services",
     locale: "en-IN",
@@ -42,6 +44,24 @@ export const metadata = {
   },
 };
 
+const ORG_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  name: "Indobright Services Pvt. Ltd.",
+  alternateName: "Indo Bright",
+  url: "https://www.indobright.co.in",
+  logo: "",
+  sameAs: "https://www.indobright.co.in",
+};
+
+const WEBSITE_JSON_LD = {
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  name: "Indobright Services",
+  url: "https://www.indobright.co.in",
+};
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -51,6 +71,10 @@ export default function RootLayout({ children }) {
           inter.className
         )}
       >
+        {/* JSON LD */}
+        <StructuredData jsonLd={ORG_JSON_LD} />
+        <StructuredData jsonLd={WEBSITE_JSON_LD} />
+        
         {/* HEADER */}
         <Header />
 
