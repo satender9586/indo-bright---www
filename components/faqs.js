@@ -2,7 +2,6 @@
 
 import * as Accordion from "@radix-ui/react-accordion";
 import { PageContainer } from "./shared";
-import { FAQPageJsonLd } from "next-seo";
 
 export const FAQS = ({ items }) => {
   const jsonLd = {
