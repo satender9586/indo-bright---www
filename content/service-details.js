@@ -1,6 +1,6 @@
 export const SECTION_HERO_PROPS = {
   labelProps: { children: "SERVICE" },
-  titleProps: { children: "Government e-Marketplace" },
+  titleProps: { as: "h1", children: "Government e-Marketplace" },
   descProps: {
     className: "text-lg",
     children:

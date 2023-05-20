@@ -14,6 +14,26 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
+"@calcom/embed-core@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-core/-/embed-core-1.1.5.tgz#34cd44465c39877006fb842abee50ffcb55f84bc"
+  integrity sha512-iBVpTOemIq5bK5LiNFugnN9eK2CIVpejkylQw+nPBMttA6ypAlMf3SZmW7KsSjaeK9qYDxOoyvEwagsBygtPeA==
+
+"@calcom/embed-react@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-react/-/embed-react-1.0.12.tgz#7479125ad3b50054df4663bec9c1b95d895b1546"
+  integrity sha512-JQb+WFvD+wMmOZIGSePvh6MHbg36tY2dA0q2LtB8ak2id6isvogrUPh0dSveiFYY0dd/xfPoNaiWwH3B8cmqcw==
+  dependencies:
+    "@calcom/embed-core" "^1.1.5"
+    "@calcom/embed-snippet" "^1.0.7"
+
+"@calcom/embed-snippet@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-snippet/-/embed-snippet-1.0.7.tgz#3d243537713141a7315915daddaa1d607f8c7043"
+  integrity sha512-OV/O9IvQ5xTVWkIqIPkJmdjA3X9AnpJH1dYEB7IVjy5wOCwpikruHAabEStrR4KVVTNn/jtskhavZgmOwQ5vHQ==
+  dependencies:
+    "@calcom/embed-core" "^1.1.5"
+
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.4.0.tgz#a23514e8fb9af1269d5f7788aa556798d61c6b59"

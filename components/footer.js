@@ -1,16 +1,15 @@
 import {
   PageContainer,
   Brand,
-  Button,
   VStack,
-  HStack,
   Span,
+  HStack,
 } from "@/components/shared";
 import { NAV_LINKS } from "@/content/shared";
 import Link from "next/link";
 
 export const Footer = () => (
-  <PageContainer className="">
+  <PageContainer>
     <footer className="flex flex-row justify-between items-center rounded-t-3xl px-10 bg-primary text-white">
       <VStack className="w-full">
         <VStack className="md:flex-row gap-4 justify-between py-8">

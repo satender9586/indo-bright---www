@@ -1,7 +1,7 @@
 import { robotoSlab } from "@/app/fonts";
 import {
   Button,
-  H1,
+  Element,
   HStack,
   PageContainer,
   Para,
@@ -11,6 +11,7 @@ import {
 import clsx from "clsx";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
+import { CalButton } from "./cal-button";
 
 export const Section = ({
   labelProps: { className: labelClassName, ...labelProps } = {},
@@ -19,6 +20,7 @@ export const Section = ({
   paper = false,
   flip = false,
   dark = false,
+  calProps,
   buttonProps,
   imgProps,
   children,
@@ -27,16 +29,21 @@ export const Section = ({
 }) => (
   <PageContainer className={className}>
     <VStack
-      className={twMerge("p-10 rounded-3xl gap-32",clsx({
-        "bg-white": (paper && !dark) === true,
-        "bg-primary": (paper && dark) === true,
-        "md:p-10": padding === 0,
-        "md:p-20": padding === 1,
-      }))}
+      className={twMerge(
+        "p-10 rounded-3xl gap-32",
+        clsx({
+          "bg-white": (paper && !dark) === true,
+          "bg-primary": (paper && dark) === true,
+          "md:p-10": padding === 0,
+          "md:p-20": padding === 1,
+        })
+      )}
     >
-      <HStack className={clsx("gap-10 flex-col lg:flex-row items-center", {
-        "lg:flex-row-reverse": flip === true,
-      })}>
+      <HStack
+        className={clsx("gap-10 flex-col lg:flex-row items-center", {
+          "lg:flex-row-reverse": flip === true,
+        })}
+      >
         <VStack className="w-full lg:w-1/2 items-start gap-4">
           {labelProps && (
             <Span
@@ -52,9 +59,10 @@ export const Section = ({
             />
           )}
           {titleProps && (
-            <H1
+            <Element
+              as={titleProps?.as ?? "h2"}
               className={twMerge(
-                "md:text-6xl leading-tight",
+                "text-3xl md:text-6xl leading-tight",
                 clsx({
                   "text-white": (paper && dark) === true,
                 }),
@@ -76,8 +84,13 @@ export const Section = ({
               {...descProps}
             />
           )}
-          
-          {buttonProps && <><br /><Button {...buttonProps} /></>}
+          {calProps && <CalButton {...calProps} />}
+          {buttonProps && (
+            <>
+              <br />
+              <Button {...buttonProps} />
+            </>
+          )}
         </VStack>
         {imgProps && (
           // eslint-disable-next-line jsx-a11y/alt-text

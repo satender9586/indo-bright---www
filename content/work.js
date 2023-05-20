@@ -1,6 +1,6 @@
 export const SECTION_HERO_PROPS = {
   labelProps: { children: "Our Work" },
-  titleProps: { children: "Powering Indian Dreams: Startups & MSME Solutions" },
+  titleProps: { as: "h1", children: "Powering Indian Dreams: Startups & MSME Solutions" },
   descProps: {
     className: "text-lg",
     children:
