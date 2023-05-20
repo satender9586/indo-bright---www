@@ -1,5 +1,6 @@
 "use client";
 
+import Script from "next/script";
 import { useEffect } from "react";
 
 export const TallyForm = () => {
@@ -9,8 +10,7 @@ export const TallyForm = () => {
   
   return (
     <>
-      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-      <script src="https://tally.so/widgets/embed.js" />
+      <Script src="https://tally.so/widgets/embed.js" />
       <iframe
         className="-ml-2"
         data-tally-src="https://tally.so/embed/wvrYp4?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
