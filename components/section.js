@@ -22,9 +22,10 @@ export const Section = ({
   buttonProps,
   imgProps,
   children,
-  padding = 1
+  padding = 1,
+  className,
 }) => (
-  <PageContainer className="">
+  <PageContainer className={className}>
     <VStack
       className={twMerge("p-10 rounded-3xl gap-32",clsx({
         "bg-white": (paper && !dark) === true,

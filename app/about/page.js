@@ -14,9 +14,9 @@ import { FAQ_PROPS } from "@/content/home";
 export default function About() {
   return (
     <VStack className="gap-20">
-      <Section {...SECTION_HERO_PROPS} flip />
+      <Section {...SECTION_HERO_PROPS} flip/>
       <Section {...SECTION_ABOUT_PROPS} flip>
-        <div className="grid grid-cols-2 md: grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {STATS.map((o) => (
             <VStack className="text-white gap-2" key={o.name}>
               <H3 className={clsx("text-6xl font-bold", robotoSlab.className)}>{o.value}</H3>

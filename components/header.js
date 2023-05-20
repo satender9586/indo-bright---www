@@ -1,13 +1,14 @@
 import { PageContainer, Brand, Button } from "@/components/shared";
+import { Navgitaion } from "./navigation-menu";
 
 export const Header = () => (
   <PageContainer className="z-50 pt-4 sticky top-0">
-    <header className="drop-shadow-[0_28px_28px_rgba(0,0,0,0.4)] border border-secondary/50 border-solid flex flex-row justify-between items-center h-20 rounded-3xl px-10 bg-primary backdrop-blur-md text-white">
-      <span className="w-[10rem] flex flex-row">
+    <header className="drop-shadow-[0_28px_28px_rgba(0,0,0,0.4)] border border-secondary/50 border-solid flex flex-row justify-between items-center h-20 rounded-3xl px-4 md:px-10 bg-white/50 backdrop-blur-lg text-black">
+      <span className="w-[12rem] flex flex-row">
         <Brand />
       </span>
-      {/* <span>NAV</span> */}
-      <span className="w-[10rem] flex flex-row-reverse">
+      <Navgitaion />
+      <span className="w-[12rem] flex flex-row-reverse">
         <Button
           icon={
             <svg

@@ -15,6 +15,14 @@ export default function Work() {
   return (
     <VStack className="gap-20">
       <Section {...SECTION_HERO_PROPS} flip />
+      <Section {...SECTION_HERO_PROPS}  />
+      <Section {...SECTION_HERO_PROPS} flip />
+      <Section {...SECTION_HERO_PROPS}  />
+      <Section {...SECTION_HERO_PROPS} flip />
+      <Section {...SECTION_HERO_PROPS}  />
+      <Section {...SECTION_HERO_PROPS} flip />
+      <Section {...SECTION_HERO_PROPS}  />
+      <Section {...SECTION_HERO_PROPS} flip />
       <FAQS {...FAQ_PROPS} />
     </VStack>
   );

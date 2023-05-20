@@ -53,7 +53,7 @@ export const SECTION_ONE_PROPS = {
 };
 
 export const SECTION_TWO_PROPS = {
-  labelProps: { children: "Our Solutions" },
+  labelProps: { children: "Our Services" },
   titleProps: { children: "Powering Indian Dreams: Startups & MSME Solutions" },
   descProps: {
     className: "text-lg",
@@ -69,7 +69,7 @@ export const SECTION_TWO_PROPS = {
 };
 
 export const SECTION_LAST_PROPS = {
-  titleProps: { children: "Simplifying Complexity by Being Transparent" },
+  titleProps: { children: "Simplifying Complexity by Being Clear" },
   imgProps: {
     alt: "section img",
     width: 1000,

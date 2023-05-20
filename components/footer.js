@@ -15,7 +15,7 @@ export const Footer = () => (
       <VStack className="w-full">
         <VStack className="md:flex-row gap-4 justify-between py-8">
           <VStack>
-            <Brand />
+            <Brand white />
           </VStack>
           <HStack className="gap-8 items-center">
             {NAV_LINKS.map((o) => (

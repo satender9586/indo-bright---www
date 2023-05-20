@@ -16,8 +16,17 @@ module.exports = {
         slab: ['var(--font-roboto-slab)'],
       },
       colors: {
-        primary: "#254B45",
-        secondary: "#E6F0EC",
+        // // MILITARY THEME
+        // primary: "#254B45",
+        // secondary: "#E6F0EC",
+
+        // // INDIGO THEME 
+        // primary: "rgb(30 58 138)",
+        // secondary: "rgb(239 246 255)",
+
+        // INDO BRIGHT THEME
+        primary: "#363F99",
+        secondary: "rgb(239 246 255)",
       },
     },
   },
