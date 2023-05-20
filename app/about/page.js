@@ -4,6 +4,8 @@ import { SECTION_ABOUT_PROPS, SECTION_HERO_PROPS, STATS } from "@/content/about"
 import { Section } from "@/components/section";
 import clsx from "clsx";
 import { robotoSlab } from "../fonts";
+import { FAQS } from "@/components/faqs";
+import { FAQ_PROPS } from "@/content/home";
 
 //
 // ───────────────────────────────────────────────────── MAIN COMPONENT ───────
@@ -23,6 +25,7 @@ export default function About() {
           ))}
         </div>
       </Section>
+      <FAQS {...FAQ_PROPS} />
     </VStack>
   );
 }

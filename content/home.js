@@ -119,3 +119,13 @@ export const CATEGORIES = [
     desc: "Register your company in India with our expert team of CA/CS and legal advisors.",
   },
 ];
+
+export const FAQ_PROPS = {
+    items: [
+        { id: 1, question: "What is a Private Limited Company?", answer: "A private limited company is a privately-held business entity. It is held by private stakeholders. The liability of the members of a Private Limited Company is limited to the amount of shares respectively held by them. Shares of Private Limited Company cannot be traded on the stock market." },
+        { id: 2, question: "What is a Private Limited Company?", answer: "A private limited company is a privately-held business entity. It is held by private stakeholders. The liability of the members of a Private Limited Company is limited to the amount of shares respectively held by them. Shares of Private Limited Company cannot be traded on the stock market." },
+        { id: 3, question: "What is a Private Limited Company?", answer: "A private limited company is a privately-held business entity. It is held by private stakeholders. The liability of the members of a Private Limited Company is limited to the amount of shares respectively held by them. Shares of Private Limited Company cannot be traded on the stock market." },
+        { id: 4, question: "What is a Private Limited Company?", answer: "A private limited company is a privately-held business entity. It is held by private stakeholders. The liability of the members of a Private Limited Company is limited to the amount of shares respectively held by them. Shares of Private Limited Company cannot be traded on the stock market." },
+        { id: 5, question: "What is a Private Limited Company?", answer: "A private limited company is a privately-held business entity. It is held by private stakeholders. The liability of the members of a Private Limited Company is limited to the amount of shares respectively held by them. Shares of Private Limited Company cannot be traded on the stock market." },
+    ]
+};
