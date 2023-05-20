@@ -77,7 +77,7 @@ export const Brand = ({ white = false }) => (
         fill={white ? "#FFFFFF" : "#363F99"}
       />
     </svg>
-    <Span className={twMerge("text-primary text-sm md:text-lg font-bold tracking-widest", clsx({ "text-white": white }))}>INDO BRIGHT</Span>
+    <Span className={twMerge("text-primary text-sm md:text-lg font-bold tracking-widest", clsx({ "text-white": white }))}>INDOBRIGHT</Span>
   </Link>
 );
 

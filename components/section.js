@@ -11,6 +11,7 @@ import {
 import clsx from "clsx";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
+import { CalButton } from "./cal-button";
 
 export const Section = ({
   labelProps: { className: labelClassName, ...labelProps } = {},
@@ -19,6 +20,7 @@ export const Section = ({
   paper = false,
   flip = false,
   dark = false,
+  calProps,
   buttonProps,
   imgProps,
   children,
@@ -76,7 +78,7 @@ export const Section = ({
               {...descProps}
             />
           )}
-          
+          {calProps && <CalButton {...calProps} />}
           {buttonProps && <><br /><Button {...buttonProps} /></>}
         </VStack>
         {imgProps && (
