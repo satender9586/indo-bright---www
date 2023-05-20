@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export const TallyForm = () => {
   useEffect(() => {
-    window.Tally.loadEmbeds();
+    window?.Tally?.loadEmbeds?.();
   }, []);
   
   return (
