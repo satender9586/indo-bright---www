@@ -12,7 +12,7 @@ export const SECTION_HERO_PROPS = {
     height: 1000,
     src: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=100",
   },
-  buttonProps: { children: "Get Started" },
+  calProps: { children: "Get Started" },
   padding: 0,
 };
 
@@ -42,12 +42,12 @@ export const SECTION_LAST_PROPS = {
     height: 1000,
     src: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=100",
   },
-  buttonProps: { children: "Learn More" },
+  calProps: { children: "Learn More" },
 };
 
 export const STATS = [
-  { label: "Clients", value: "100+", name: "clients" },
-  { label: "Clients", value: "100+", name: "clients" },
-  { label: "Clients", value: "100+", name: "clients" },
-  { label: "Clients", value: "100+", name: "clients" },
+  { label: "Incorporations", value: "30+", name: "incorporations" },
+  { label: "Clients", value: "20+", name: "clients" },
+  { label: "Services", value: "40+", name: "services" },
+  { label: "Digital Solutions", value: "55+", name: "digital" },
 ]

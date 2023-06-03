@@ -23,8 +23,8 @@ export const FAQS = ({ items }) => {
     <PageContainer>
       <StructuredData jsonLd={FAQ_JSON_LD} />
       <Accordion.Root
-        className="flex flex-col gap-4"
-        type="multiple"
+        className="flex flex-col gap-4 mx-4"
+        type="single"
         collapsible
       >
         {items.map((o) => (

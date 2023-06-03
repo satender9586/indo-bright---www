@@ -61,28 +61,29 @@ const WEBSITE_JSON_LD = {
   url: "https://www.indobright.co.in",
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
         className={clsx(
-          "flex flex-col bg-secondary min-h-screen gap-20",
+          "flex flex-col bg-secondary min-h-screen",
           inter.className
         )}
       >
         {/* JSON LD */}
         <StructuredData jsonLd={ORG_JSON_LD} />
         <StructuredData jsonLd={WEBSITE_JSON_LD} />
-        
+
         {/* HEADER */}
         <Header />
 
         {/* CONTENT */}
-        <main>{children}</main>
+        <main className="py-10 md:py-20">
+          {children}
+          <Section className="pt-20" {...SECTION_LAST_PROPS} paper />
+        </main>
 
         {/* FOOTER */}
-        <Section {...SECTION_LAST_PROPS} paper />
         <Footer />
       </body>
     </html>

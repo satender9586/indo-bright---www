@@ -1,4 +1,4 @@
-import { IconArrowRight } from "./svgs";
+import { IconArrowRight, IconDigital, IconFinance, IconGraph, IconPaper } from "./svgs";
 
 export const SECTION_HERO_PROPS = {
   labelProps: { children: "" },
@@ -15,9 +15,9 @@ export const SECTION_HERO_PROPS = {
     alt: "section img",
     width: 1000,
     height: 1000,
-    src: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=100",
+    src: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=80",
   },
-  buttonProps: {
+  calProps: {
     dark: true,
     size: 1,
     icon: <IconArrowRight className="w-6 h-6" />,
@@ -28,33 +28,33 @@ export const SECTION_HERO_PROPS = {
 
 export const SECTION_ONE_PROPS = {
   labelProps: { children: "About Us" },
-  titleProps: { children: "Powering Indian Dreams: Startups & MSME Solutions" },
+  titleProps: { children: "We are a Team for your Startup" },
   descProps: {
     className: "text-lg",
     children:
-      "Unlock your Indian startup's potential with our specialized incorporation services, designed to support MSMEs in establishing a strong foundation for business success.",
+      "Our driving force is to provide unwavering support to Micro, Small, and Medium Enterprises (MSMEs) by offering valuable insights into government schemes that profoundly impact their business growth. In today's ever-evolving landscape, the Indian government actively seeks out innovative companies through the Start-up India innovation scheme, which encompasses a diverse range of schemes to facilitate their scaling efforts.",
   },
   imgProps: {
     alt: "section img",
     width: 1000,
     height: 1000,
-    src: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=100",
+    src: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
   },
 };
 
 export const SECTION_TWO_PROPS = {
   labelProps: { children: "Our Services" },
-  titleProps: { children: "Powering Indian Dreams: Startups & MSME Solutions" },
+  titleProps: { children: "Incorporate and Succeed!" },
   descProps: {
     className: "text-lg",
     children:
-      "Unlock your Indian startup's potential with our specialized incorporation services, designed to support MSMEs in establishing a strong foundation for business success.",
+      "Unlock your business's full potential with our expert assistance in incorporating your company and accessing a wide range of government schemes and digital solutions. Stay ahead of the competition and maximize growth opportunities in the dynamic Indian market.",
   },
   imgProps: {
     alt: "section img",
     width: 1000,
     height: 1000,
-    src: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=80",
+    src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2971&q=80",
   },
 };
 
@@ -76,24 +76,28 @@ export const SECTION_LAST_PROPS = {
 
 export const CATEGORIES = [
   {
-    title: "Company Registration",
+    title: "Start-up India",
+    icon: <IconGraph className="w-32 h-32 text-primary/75" />,
     name: "company-registration",
-    desc: "Register your company in India with our expert team of CA/CS and legal advisors.",
+    desc: "Unlock your entrepreneurial potential with our expert guidance to navigate the Indian market and launch your startup successfully.",
   },
   {
-    title: "Company Registration",
+    title: "Finance",
+    icon: <IconFinance className="w-32 h-32 text-primary/75" />,
     name: "company-registration",
-    desc: "Register your company in India with our expert team of CA/CS and legal advisors.",
+    desc: "Maximize your financial potential with our tailored solutions, leveraging government schemes and incentives to optimize your business growth.",
   },
   {
-    title: "Company Registration",
+    title: "Certification",
+    icon: <IconPaper className="w-32 h-32 text-primary/75" />,
     name: "company-registration",
-    desc: "Register your company in India with our expert team of CA/CS and legal advisors.",
+    desc: "Stay ahead of the competition and build trust with stakeholders through our comprehensive certification services, ensuring compliance and quality standards.",
   },
   {
-    title: "Company Registration",
+    title: "Digital Solutions",
+    icon: <IconDigital className="w-32 h-32 text-primary/75" />,
     name: "company-registration",
-    desc: "Register your company in India with our expert team of CA/CS and legal advisors.",
+    desc: "Transform your business for the digital age with our cutting-edge digital solutions and empowering you to streamline operations.",
   },
 ];
 

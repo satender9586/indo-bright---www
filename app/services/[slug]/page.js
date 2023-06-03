@@ -1,58 +1,45 @@
 import React from "react";
-import { H2, Para, VStack } from "@/components/shared";
-import { SECTION_HERO_PROPS } from "@/content/service-details";
+import { VStack } from "@/components/shared";
+import {
+  SECTION_HERO_PROPS,
+  SECTION_ONE_PROPS,
+} from "@/content/service-details";
 import { Section } from "@/components/section";
 import { FAQS } from "@/components/faqs";
-import { FAQ_PROPS, SECTION_ONE_PROPS } from "@/content/home";
+import { FAQ_PROPS } from "@/content/home";
+import { SERVICE_SLUGS } from "@/content/shared";
+
+export function generateStaticParams() {
+  return SERVICE_SLUGS.map(({ href }) => ({ slug: href.slice(1) }));
+}
 
 //
 // ───────────────────────────────────────────────────── MAIN COMPONENT ───────
 //
 
-export default function Service() {
+export default function Service({ params }) {
+  const service = SERVICE_SLUGS.find(
+    (s) => s.href.slice(1) === params?.slug?.toLowerCase()
+  );
   return (
     <VStack className="gap-20">
-      <Section {...SECTION_HERO_PROPS} flip />
-      <Section {...SECTION_ONE_PROPS} paper>
+      <Section
+        {...{
+          ...SECTION_HERO_PROPS,
+          titleProps: { children: service.label },
+          descProps: { children: service?.content?.one_description },
+        }}
+        flip
+      />
+      <Section
+        {...{
+          ...SECTION_ONE_PROPS,
+          descProps: { children: service?.content?.two_description },
+        }}
+        paper
+      >
         <VStack>
-          <H2>Service</H2>
-          <br />
-          <Para>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Para>
+          {service?.content?.three_description}
         </VStack>
       </Section>
       <FAQS {...FAQ_PROPS} />
