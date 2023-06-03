@@ -73,7 +73,6 @@ export default function RootLayout({ children }) {
         {/* JSON LD */}
         <StructuredData jsonLd={ORG_JSON_LD} />
         <StructuredData jsonLd={WEBSITE_JSON_LD} />
-
         {/* HEADER */}
         <Header />
 
