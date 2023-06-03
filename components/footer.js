@@ -30,22 +30,22 @@ export const Footer = () => (
         <VStack className="md:flex-row gap-12 justify-between py-8">
           <VStack className="items-start gap-4">
             <HStack className="items-center">
-            <IconMail className="w-4 h-4 mr-2" />
+              <IconMail className="w-4 h-4 mr-2" />
               <Span className="text-sm text-white/75 hover:text-white">
-                 hello@indobright.co.in
+                hello@indobright.co.in
               </Span>
             </HStack>
             <HStack className="items-center">
-            <IconPhone className="w-4 h-4 mr-2" /> 
+              <IconPhone className="w-4 h-4 mr-2" />
               <Span className="text-sm text-white/75 hover:text-white">
                 +91 79 3517 9718
               </Span>
             </HStack>
           </VStack>
           <HStack>
-          <IconLocation className="min-w-min min-h-min w-4 h-4 mr-2" />
+            <IconLocation className="min-w-[1rem] w-4 h-4 mr-2" />
             <Span className="text-sm text-white/75 hover:text-white">
-               Seven Spaces, Ratnam Complex, C.G. Road, Ahmedabad, Gujarat, India
+              Seven Spaces, Ratnam Complex, C.G. Road, Ahmedabad, Gujarat, India
             </Span>
           </HStack>
         </VStack>

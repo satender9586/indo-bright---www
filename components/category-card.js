@@ -7,7 +7,7 @@ export const CategoryCard = ({ name, title, desc, icon }) => {
   return (
     <VStack
       key={name}
-      className="p-20 items-center gap-10 border bg-white rounded-3xl"
+      className="p-10 md:p-20 items-center gap-10 border bg-white rounded-3xl"
     >
       {icon ?? <IconAcademic className="w-32 h-32 text-primary/75" />}
       <H3 className={clsx("md:text-4xl text-center", robotoSlab.className)}>{title}</H3>

@@ -68,24 +68,24 @@ export const MobileNavgitaion = () => {
   return (
   <div className="block md:hidden">
   <Button className="border" onClick={() => setOpen(!open)} icon={open ? <IconCancel className="w-6 h-6 z-50" /> : <IconMenu className="w-6 h-6 z-50" />} />
-  <div className={twMerge(clsx("fixed -top-6 -left-4 w-screen h-screen overflow-scroll bg-white", { hidden: !open }))}>
+  <div className={twMerge(clsx("fixed -top-6 left-0 w-screen h-screen overflow-scroll bg-white", { hidden: !open }))}>
   <NavigationMenu.Root className="">
     <NavigationMenu.List className="flex flex-col py-40 pl-10 gap-8">
       {NAV_LINKS.map((o) => (
         <NavigationMenu.Item className="flex items-center px-4" key={o.href}>
             {o.menu ? (
             <>
-              <NavigationMenu.Trigger className="text-left text-sm font-bold tracking-widest opacity-50 data-[state=open]:opacity-100 data-[state=open]:text-primary uppercase">
-                {o.label}
+              <NavigationMenu.Trigger className="text-left text-sm font-bold tracking-widest data-[state=open]:opacity-100 data-[state=open]:text-primary uppercase">
+              <Span className="text-xl font-bold uppercase">{o.label}</Span>
                 <br/>
                 <br/>
                 <br/>
                 
               {/* <NavigationMenu.Content className="text-black p-10 bg-white rounded-3xl"> */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-16">
                   {CATEGORIES.map((o) => (
                     <VStack key={o}>
-                      <Span className="text-sm font-semibold opacity-75 uppercase border-b mb-4">
+                      <Span className="text-md font-semibold uppercase border-b pb-4 mb-4">
                         {o}
                       </Span>
                       <ul className="flex flex-col">
@@ -110,7 +110,8 @@ export const MobileNavgitaion = () => {
             </>
           ) : (
             <Link
-              className="text-sm font-bold tracking-widest opacity-50 hover:opacity-100 hover:text-primary uppercase"
+            onClick={() => setTimeout(() => setOpen(!open), 100)}
+              className="text-xl font-bold uppercase tracking-widest hover:text-primary uppercase"
               href={o.href}
             >
               {o.label}
