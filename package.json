@@ -1,7 +1,10 @@
 {
-  "name": "nextjs",
+  "name": "indo-bright---www",
+  "author": {
+    "name": "Arth K. Gajjar",
+    "email": "iarthstar@gmail.com"
+  },
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",

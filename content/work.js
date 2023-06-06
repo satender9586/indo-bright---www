@@ -1,6 +1,6 @@
 export const SECTION_HERO_PROPS = {
   labelProps: { children: "Our Work" },
-  titleProps: { children: "Powering Indian Dreams: Startups & MSME Solutions" },
+  titleProps: { as: "h1", children: "Powering Indian Dreams: Startups & MSME Solutions" },
   descProps: {
     className: "text-lg",
     children:
@@ -12,7 +12,7 @@ export const SECTION_HERO_PROPS = {
     height: 1000,
     src: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=100",
   },
-  buttonProps: { children: "Get Started" },
+  calProps: { children: "Get Started" },
   padding: 0,
 };
 

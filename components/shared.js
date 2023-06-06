@@ -56,8 +56,8 @@ export const H6 = ({ className, ...rest }) => (
 export const Para = ({ className, ...rest }) => (
   <Element as="p" className={twMerge("text-md", className)} {...rest} />
 );
-export const Span = ({ className, ...rest }) => (
-  <Element as="span" className={twMerge("text-xs", className)} {...rest} />
+export const Span = ({ className, as, ...rest }) => (
+  <Element as={as ?? "span"} className={twMerge("text-xs", className)} {...rest} />
 );
 
 export const Brand = ({ white = false }) => (
