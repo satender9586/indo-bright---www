@@ -6,7 +6,7 @@ import {
   HStack,
 } from "@/components/shared";
 import { NAV_LINKS } from "@/content/shared";
-import { IconLocation, IconMail, IconPhone } from "@/content/svgs";
+import { IconHashtag, IconLocation, IconMail, IconPhone } from "@/content/svgs";
 import Link from "next/link";
 
 export const Footer = () => (
@@ -37,8 +37,14 @@ export const Footer = () => (
             </HStack>
             <HStack className="items-center">
               <IconPhone className="w-4 h-4 mr-2" />
-              <Span className="text-sm text-white/75 hover:text-white">
+              <Span as="a" href="tel:+917935179718" className="text-sm text-white/75 hover:text-white">
                 +91 79 3517 9718
+              </Span>
+            </HStack>
+            <HStack className="items-center">
+              <IconHashtag className="w-4 h-4 mr-2" />
+              <Span className="text-sm text-white/75 hover:text-white">
+                U74909GJ2023PTC141394
               </Span>
             </HStack>
           </VStack>
