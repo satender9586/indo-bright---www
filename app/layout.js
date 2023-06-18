@@ -7,8 +7,10 @@ import { Section } from "@/components/section";
 import { SECTION_LAST_PROPS } from "@/content/home";
 import { StructuredData } from "@/components/structured-data";
 
+const URL = process.env.VERCEL_ENV === 'production' ? "https://www.indobright.co.in" : new URL(`https://${process.env.VERCEL_URL}`);
+
 export const metadata = {
-  metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
+  metadataBase: URL,
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -24,7 +26,7 @@ export const metadata = {
     title: "Indo Bright Services",
     description:
       "Indo Bright Services is a startup and MSME solutions company. We provide services like web development, mobile app development, digital marketing, and many more.",
-    url: new URL(`https://${process.env.VERCEL_URL}`),
+    url: URL,
     siteName: "Indo Bright Services",
     locale: "en-IN",
     type: "website",
