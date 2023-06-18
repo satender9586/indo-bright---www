@@ -7,7 +7,7 @@ import { Section } from "@/components/section";
 import { SECTION_LAST_PROPS } from "@/content/home";
 import { StructuredData } from "@/components/structured-data";
 
-const URL = process.env.VERCEL_ENV === 'production' ? "https://www.indobright.co.in" : new URL(`https://${process.env.VERCEL_URL}`);
+const URL = process.env.VERCEL_ENV === 'production' ? new URL("https://www.indobright.co.in") : new URL(`https://${process.env.VERCEL_URL}`);
 
 export const metadata = {
   metadataBase: URL,
