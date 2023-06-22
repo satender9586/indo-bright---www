@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { H1, H2, H3, Para, VStack } from "@/components/shared";
 import {
