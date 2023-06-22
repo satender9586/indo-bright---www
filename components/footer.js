@@ -5,7 +5,7 @@ import {
   Span,
   HStack,
 } from "@/components/shared";
-import { NAV_LINKS } from "@/content/shared";
+import { NAV_LINKS_FOOTER } from "@/content/shared";
 import { IconHashtag, IconLocation, IconMail, IconPhone } from "@/content/svgs";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ export const Footer = () => (
             <Brand white />
           </VStack>
           <HStack className="gap-x-8 gap-y-4 items-center flex-wrap">
-            {NAV_LINKS.map((o) => (
+            {NAV_LINKS_FOOTER.map((o) => (
               <Link key={o.href} href={o.href} className="text-sm">
                 <Span className="text-md font-medium text-white/75 hover:text-white">
                   {o.label}

@@ -1,8 +1,15 @@
 export const NAV_LINKS = [
   { label: "Services", href: "/", menu: true },
-  // { label: "Work", href: "/work" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
+];
+
+export const NAV_LINKS_FOOTER = [
+  { label: "Services", href: "/", menu: true },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Refund Policy", href: "/refund-policy" },
 ];
 
 export const SERVICES = [

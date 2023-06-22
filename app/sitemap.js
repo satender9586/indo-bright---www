@@ -15,11 +15,11 @@ export default function sitemap() {
       lastModified: new Date(),
     },
     {
-      url: "https://www.indobright.co.in/services",
+      url: "https://www.indobright.co.in/refund-policy",
       lastModified: new Date(),
     },
     {
-      url: "https://www.indobright.co.in/work",
+      url: "https://www.indobright.co.in/terms-and-conditions",
       lastModified: new Date(),
     },
     ...SERVICE_SLUGS.map(({ href }) => ({

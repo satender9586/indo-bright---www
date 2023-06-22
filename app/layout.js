@@ -17,17 +17,17 @@ export const metadata = {
     maximumScale: 1,
   },
   title: {
-    default: "Indo Bright Services",
-    template: "Indo Bright Services - %s",
+    default: "Indobright Services",
+    template: "Indobright Services - %s",
   },
   description:
-    "Indo Bright Services is a startup and MSME solutions company. We provide services like web development, mobile app development, digital marketing, and many more.",
+    "Indobright Services is a startup and MSME solutions company. We provide services like web development, mobile app development, digital marketing, and many more.",
   openGraph: {
-    title: "Indo Bright Services",
+    title: "Indobright Services",
     description:
-      "Indo Bright Services is a startup and MSME solutions company. We provide services like web development, mobile app development, digital marketing, and many more.",
+      "Indobright Services is a startup and MSME solutions company. We provide services like web development, mobile app development, digital marketing, and many more.",
     url: CANONICAL_URL,
-    siteName: "Indo Bright Services",
+    siteName: "Indobright Services",
     locale: "en-IN",
     type: "website",
   },
@@ -50,7 +50,7 @@ const ORG_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "Corporation",
   name: "Indobright Services Pvt. Ltd.",
-  alternateName: "Indo Bright",
+  alternateName: "Indobright",
   url: "https://www.indobright.co.in",
   logo: "",
   sameAs: "https://www.indobright.co.in",
