@@ -67,7 +67,7 @@ export const MobileNavgitaion = () => {
   const [open, setOpen] = React.useState(false);
   return (
   <div className="block md:hidden">
-  <Button className="border" onClick={() => setOpen(!open)} icon={open ? <IconCancel className="w-6 h-6 z-50" /> : <IconMenu className="w-6 h-6 z-50" />} />
+  <Button aria-expanded={open ? "true" : "false"} aria-controls="menu" className="border" onClick={() => setOpen(!open)} icon={open ? <IconCancel className="w-6 h-6 z-50" /> : <IconMenu className="w-6 h-6 z-50" />} />
   <div className={twMerge(clsx("fixed -top-6 left-0 w-screen h-screen overflow-scroll bg-white", { hidden: !open }))}>
   <NavigationMenu.Root className="">
     <NavigationMenu.List className="flex flex-col py-40 pl-10 gap-8">
