@@ -37,8 +37,8 @@ export const Footer = () => (
             </HStack>
             <HStack className="items-center">
               <IconPhone className="w-4 h-4 mr-2" />
-              <Span as="a" href="tel:+917935179718" className="text-sm text-white/75 hover:text-white">
-                +91 79 3517 9718
+              <Span as="a" href="tel:+917946040261" className="text-sm text-white/75 hover:text-white">
+                079 4604 0261
               </Span>
             </HStack>
             <HStack className="items-center">
@@ -51,7 +51,7 @@ export const Footer = () => (
           <HStack>
             <IconLocation className="min-w-[1rem] w-4 h-4 mr-2" />
             <Span className="text-sm text-white/75 hover:text-white">
-              Seven Spaces, Ratnam Complex, C.G. Road, Ahmedabad, Gujarat, India
+              520-A 5th Floor, SAKAR-IX, Near City Gold, Ashram Road, Ahmedabad - 380009
             </Span>
           </HStack>
         </VStack>
