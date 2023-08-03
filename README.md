@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+![Alt](https://repobeats.axiom.co/api/embed/25c09291f78a07fe13726f0e7a873a79ef7ebddf.svg "Repobeats analytics image")
+
 ## Getting Started
 
 First, run the development server:
