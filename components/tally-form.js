@@ -34,8 +34,8 @@ export const TallyForm = () => {
         {
           zIndex: "z-20 pointer-events-none",
           view: (
-            <div className="h-full w-full flex items-end justify-end max-[432px]:justify-start">
-              <div className="pointer-events-auto h-16 w-40 bg-secondary" />
+            <div className="h-full w-full flex items-end justify-end">
+              <div className="pointer-events-auto h-16 w-24 md:w-64 bg-secondary" />
             </div>
           ),
         },
