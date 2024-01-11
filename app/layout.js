@@ -6,8 +6,13 @@ import { Footer } from "@/components/footer";
 import { Section } from "@/components/section";
 import { SECTION_LAST_PROPS } from "@/content/home";
 import { StructuredData } from "@/components/structured-data";
+import TallyPopup from "@/components/tally-popup";
+import Script from "next/script";
 
-const CANONICAL_URL = process.env.VERCEL_ENV === 'production' ? new URL("https://www.indobright.co.in") : new URL(`https://${process.env.VERCEL_URL}`);
+const CANONICAL_URL =
+  process.env.VERCEL_ENV === "production"
+    ? new URL("https://www.indobright.co.in")
+    : new URL(`https://${process.env.VERCEL_URL}`);
 
 export const metadata = {
   metadataBase: CANONICAL_URL,
@@ -66,12 +71,33 @@ const WEBSITE_JSON_LD = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* <!-- Google Tag Manager --> */}
+        <Script id="google-analytics">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');`}
+        </Script>
+        {/* <!-- End Google Tag Manager --> */}
+      </head>
       <body
         className={clsx(
           "flex flex-col bg-secondary min-h-screen",
           inter.className
         )}
       >
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
         {/* JSON LD */}
         <StructuredData jsonLd={ORG_JSON_LD} />
         <StructuredData jsonLd={WEBSITE_JSON_LD} />
@@ -86,6 +112,7 @@ export default function RootLayout({ children }) {
 
         {/* FOOTER */}
         <Footer />
+        <TallyPopup />
       </body>
     </html>
   );
