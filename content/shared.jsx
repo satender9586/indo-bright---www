@@ -9,7 +9,70 @@ export const NAV_LINKS_FOOTER = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Terms & Conditions", href: "/terms-and-conditions" },
-  { label: "Refund Policy", href: "/refund-policy" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+];
+
+export const SOCIALS = [
+  {
+    label: (
+      <span className="text-white bg-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 448 512"
+        >
+          <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+      </span>
+    ),
+    href: "/",
+  },
+  {
+    label: (
+      <span className="text-white bg-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 448 512"
+        >
+          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+        </svg>
+      </span>
+    ),
+    href: "https://www.instagram.com/indobrightservices/",
+  },
+  {
+    label: (
+      <span className="text-white bg-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 448 512"
+        >
+          <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+        </svg>
+      </span>
+    ),
+    href: "https://www.facebook.com/people/Indobright-Services-Pvt-Ltd/61555477850935/",
+  },
+  {
+    label: (
+      <span className="text-white bg-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 448 512"
+        >
+          <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+        </svg>
+      </span>
+    ),
+    href: "https://www.linkedin.com/company/indobright-services-pvt-ltd/",
+  },
 ];
 
 export const SERVICES = [
@@ -289,9 +352,9 @@ export const SERVICES = [
           Our Sole Proprietorship Registration Services:
           <br />
           <br />
-          At Indobright, we simplify the sole proprietorship registration process,
-          ensuring compliance with all legal requirements. Our comprehensive
-          services include:
+          At Indobright, we simplify the sole proprietorship registration
+          process, ensuring compliance with all legal requirements. Our
+          comprehensive services include:
           <br />
           <br />
           Consultation and Advisory: Our experienced consultants will provide
@@ -449,10 +512,11 @@ export const SERVICES = [
           connects.
           <br />
           <br />
-          Position your startup for success with Indobright's reliable and efficient
-          Startup India Certification services. Contact us today to learn more
-          about how we can assist you in obtaining Startup India Certification
-          and accelerating your journey as an innovative and recognized startup.
+          Position your startup for success with Indobright's reliable and
+          efficient Startup India Certification services. Contact us today to
+          learn more about how we can assist you in obtaining Startup India
+          Certification and accelerating your journey as an innovative and
+          recognized startup.
           <br />
           <br />
           Contact Information: For more information or to get started with
@@ -654,10 +718,10 @@ export const SERVICES = [
           your processes to uphold the ISO certification standards.
           <br />
           <br />
-          Elevate your organization's reputation and performance with Indobright's
-          reliable and efficient ISO certification services. Contact us today to
-          learn more about how we can assist you in obtaining ISO certification
-          and driving excellence in your operations.
+          Elevate your organization's reputation and performance with
+          Indobright's reliable and efficient ISO certification services.
+          Contact us today to learn more about how we can assist you in
+          obtaining ISO certification and driving excellence in your operations.
           <br />
           <br />
           Contact Information: For more information or to get started with ISO
@@ -720,10 +784,10 @@ export const SERVICES = [
           addressing any queries or issues that may arise.
           <br />
           <br />
-          Facilitate your international trade operations with Indobright's reliable
-          and efficient IEC certification services. Contact us today to learn
-          more about how we can assist you in obtaining IEC certification and
-          unlocking new opportunities in the global marketplace.
+          Facilitate your international trade operations with Indobright's
+          reliable and efficient IEC certification services. Contact us today to
+          learn more about how we can assist you in obtaining IEC certification
+          and unlocking new opportunities in the global marketplace.
           <br />
           <br />
           Contact Information: For more information or to get started with IEC
@@ -785,10 +849,11 @@ export const SERVICES = [
           monitoring and reporting requirements, to ensure ongoing compliance.
           <br />
           <br />
-          Unlock the potential of government grants and funding with Indobright's
-          reliable and efficient services. Contact us today to learn more about
-          how we can assist you in accessing government grants and funding
-          opportunities to drive your projects and initiatives forward.
+          Unlock the potential of government grants and funding with
+          Indobright's reliable and efficient services. Contact us today to
+          learn more about how we can assist you in accessing government grants
+          and funding opportunities to drive your projects and initiatives
+          forward.
           <br />
           <br />
           Contact Information: For more information or to get started with our
@@ -820,9 +885,9 @@ export const SERVICES = [
           Our Seed Fund Services:
           <br />
           <br />
-          At Indobright, we specialize in providing comprehensive seed fund services
-          tailored to the unique needs of startups and entrepreneurs. Our
-          services include:
+          At Indobright, we specialize in providing comprehensive seed fund
+          services tailored to the unique needs of startups and entrepreneurs.
+          Our services include:
           <br />
           <br />
           Funding Opportunity Research: We conduct extensive research to
@@ -921,11 +986,11 @@ export const SERVICES = [
           in scaling your business.
           <br />
           <br />
-          Unlock the potential of Nidhi Prayas Yojna with Indobright's reliable and
-          efficient services. Contact us today to learn more about how we can
-          assist you in accessing the resources and support available through
-          the Nidhi Prayas Yojna program and realizing your entrepreneurial
-          dreams.
+          Unlock the potential of Nidhi Prayas Yojna with Indobright's reliable
+          and efficient services. Contact us today to learn more about how we
+          can assist you in accessing the resources and support available
+          through the Nidhi Prayas Yojna program and realizing your
+          entrepreneurial dreams.
           <br />
           <br />
           Contact Information: For more information or to get started with our
@@ -1061,10 +1126,10 @@ export const SERVICES = [
           networks, and expertise of venture capitalists to fuel your growth.
           <br />
           <br />
-          Unlock the potential of venture capital funding with Indobright's reliable
-          and efficient services. Contact us today to learn more about how we
-          can assist you in accessing venture capital funding and driving the
-          growth and success of your innovative business.
+          Unlock the potential of venture capital funding with Indobright's
+          reliable and efficient services. Contact us today to learn more about
+          how we can assist you in accessing venture capital funding and driving
+          the growth and success of your innovative business.
           <br />
           <br />
           Contact Information: For more information or to get started with our
@@ -1139,8 +1204,9 @@ export const SERVICES = [
           Our Digital Marketing Services:
           <br />
           <br />
-          At Indobright, we specialize in providing comprehensive digital marketing
-          services tailored to your business needs. Our services include:
+          At Indobright, we specialize in providing comprehensive digital
+          marketing services tailored to your business needs. Our services
+          include:
           <br />
           <br />
           Digital Strategy Development: We work closely with you to understand
@@ -1217,8 +1283,9 @@ export const SERVICES = [
           Our Amazon Marketing Services:
           <br />
           <br />
-          At Indobright, we specialize in providing comprehensive Amazon marketing
-          services tailored to your business needs. Our services include:
+          At Indobright, we specialize in providing comprehensive Amazon
+          marketing services tailored to your business needs. Our services
+          include:
           <br />
           <br />
           Amazon SEO and Product Optimization: We optimize your product listings
@@ -1257,10 +1324,10 @@ export const SERVICES = [
           enabling data-driven decisions for continuous optimization.
           <br />
           <br />
-          Unlock the potential of Amazon marketing with Indobright's reliable and
-          efficient services. Contact us today to learn more about how we can
-          assist you in leveraging Amazon's platform to drive sales, increase
-          visibility, and achieve online success.
+          Unlock the potential of Amazon marketing with Indobright's reliable
+          and efficient services. Contact us today to learn more about how we
+          can assist you in leveraging Amazon's platform to drive sales,
+          increase visibility, and achieve online success.
           <br />
           <br />
           Contact Information: For more information or to get started with our
@@ -1430,10 +1497,10 @@ export const SERVICES = [
           measure the success of your SEO efforts.
           <br />
           <br />
-          Unlock the power of Search Engine Optimization with Indobright's reliable
-          and efficient services. Contact us today to learn more about how we
-          can assist you in optimizing your website, increasing your online
-          visibility, and driving organic traffic to grow your business.
+          Unlock the power of Search Engine Optimization with Indobright's
+          reliable and efficient services. Contact us today to learn more about
+          how we can assist you in optimizing your website, increasing your
+          online visibility, and driving organic traffic to grow your business.
           <br />
           <br />
           Contact Information: For more information or to get started with our
@@ -1601,10 +1668,10 @@ export const SERVICES = [
           and address any potential issues or negative sentiment.
           <br />
           <br />
-          Unlock the potential of social media management with Indobright's reliable
-          and efficient services. Contact us today to learn more about how we
-          can assist you in managing your social media presence, engaging with
-          your audience, and achieving your marketing goals.
+          Unlock the potential of social media management with Indobright's
+          reliable and efficient services. Contact us today to learn more about
+          how we can assist you in managing your social media presence, engaging
+          with your audience, and achieving your marketing goals.
           <br />
           <br />
           Contact Information: For more information or to get started with our
@@ -1637,8 +1704,9 @@ export const SERVICES = [
           Our Email Marketing Services:
           <br />
           <br />
-          At Indobright, we specialize in providing comprehensive email marketing
-          services tailored to your business needs. Our services include:
+          At Indobright, we specialize in providing comprehensive email
+          marketing services tailored to your business needs. Our services
+          include:
           <br />
           <br />
           Email Campaign Strategy: We develop a customized email marketing
@@ -1768,11 +1836,11 @@ export const SERVICES = [
           decisions and improve your online presence.
           <br />
           <br />
-          Unlock the potential of your online presence with Indobright's reliable
-          and efficient website development services. Contact us today to learn
-          more about how we can assist you in creating a professional website
-          that showcases your brand, engages your audience, and drives business
-          growth.
+          Unlock the potential of your online presence with Indobright's
+          reliable and efficient website development services. Contact us today
+          to learn more about how we can assist you in creating a professional
+          website that showcases your brand, engages your audience, and drives
+          business growth.
           <br />
           <br />
           Contact Information: For more information or to get started with our
@@ -1851,11 +1919,11 @@ export const SERVICES = [
           provide updates, and ensure optimal performance.
           <br />
           <br />
-          Unlock the potential of your online presence with Indobright's reliable
-          and efficient custom website development services. Contact us today to
-          learn more about how we can assist you in creating a custom website
-          that represents your brand, engages your audience, and drives business
-          growth.
+          Unlock the potential of your online presence with Indobright's
+          reliable and efficient custom website development services. Contact us
+          today to learn more about how we can assist you in creating a custom
+          website that represents your brand, engages your audience, and drives
+          business growth.
           <br />
           <br />
           Contact Information: For more information or to get started with our
@@ -1888,9 +1956,9 @@ export const SERVICES = [
           Our E-commerce Website Development Services:
           <br />
           <br />
-          At Indobright, we specialize in providing comprehensive e-commerce website
-          development services tailored to your business needs. Our services
-          include:
+          At Indobright, we specialize in providing comprehensive e-commerce
+          website development services tailored to your business needs. Our
+          services include:
           <br />
           <br />
           Custom E-commerce Platform Development: We develop custom e-commerce
@@ -1941,10 +2009,10 @@ export const SERVICES = [
           secure, and performs optimally.
           <br />
           <br />
-          Unlock the potential of your online store with Indobright's reliable and
-          efficient e-commerce website development services. Contact us today to
-          learn more about how we can assist you in creating a robust and
-          engaging e-commerce platform that drives sales, enhances customer
+          Unlock the potential of your online store with Indobright's reliable
+          and efficient e-commerce website development services. Contact us
+          today to learn more about how we can assist you in creating a robust
+          and engaging e-commerce platform that drives sales, enhances customer
           experiences, and grows your business.
           <br />
           <br />
@@ -1992,8 +2060,8 @@ export const SERVICES = [
           Our Website Hosting Services:
           <br />
           <br />
-          At Indobright, we specialize in providing reliable and efficient website
-          hosting services tailored to your business needs. Our services
+          At Indobright, we specialize in providing reliable and efficient
+          website hosting services tailored to your business needs. Our services
           include:
           <br />
           <br />

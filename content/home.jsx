@@ -18,7 +18,7 @@ export const SECTION_HERO_PROPS = {
     src: "https://images.unsplash.com/photo-1581091877018-dac6a371d50f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=80",
   },
   calProps: {
-    dark: true,
+    dark: false,
     size: 1,
     icon: <IconArrowRight className="w-6 h-6" />,
     children: "Get Started",
@@ -145,3 +145,90 @@ export const FAQ_PROPS = {
 // SEO optimized keywords: private limited company, sole proprietorship, difference between private limited company and sole proprietorship, limited liability, single owner business
 // SEO optimized keywords: Permanent Account Number, PAN, PAN for startup incorporation, tax compliance, financial transactions
 // SEO optimized keywords: incorporating a startup in India for foreign nationals, Non-Resident Indian, NRI, regulatory requirements, necessary approvals
+
+
+
+
+export const TESTIMONIALS = [
+  {
+    quote: "The customer service at Indobright is unparalleled. I had an issue, and they went above and beyond to resolve it quickly and efficiently. I'm truly impressed and grateful for their dedication to customer satisfaction.",
+    companyName: "SURYA INDUSTRIES", name: "Sandeep Baghel."
+  },
+  {
+    quote: "My experience with Indobright was fantastic from start to finish. The attention to details, cooperating Operation Team and overall, my complete funding process exceeded my expectations. I highly recommend it to anyone looking for an exceptional fundings.",
+    companyName: "KENYS ENTERPISE", name: "Sajjan Chauhan"
+  },
+  {
+    quote: "Working with Indobright has been a game-changer for my business. Their strategic guidance and insights have helped us navigate complex challenges and make informed decisions. We've seen a remarkable improvement in our overall business performance.",
+    companyName: "SHIVANI CHEMICALS", name: "Alpesh Patel"
+  },
+  {
+    quote: "When we faced a critical financial crunch in our business, we turned to Indobright for help. Their team quickly evaluated my business profile and provided effective solutions. Their problem-solving approach is unmatched, and we're grateful for the positive impact on our business.",
+    companyName: "HARDA AUTOMATIONS", name: "Pankaj Jain"
+  },
+  {
+    quote: "What stood out about Indobright was their ability to provide tailored solutions. They took the time to understand our business needs and offered personalized advice during the incorporation process. It's a testament to their commitment to client success.",
+    companyName: "S.P. TECHNO SERVICES PVT. LTD.", name: "Mayank Sahu"
+  },
+  {
+    quote: "Thanks to Indobright Services Pvt Ltd, our business processes are now more efficient and streamlined. They analyzed our workflows, identified bottlenecks, and implemented practical solutions. The results were immediate, and we've experienced a significant increase in productivity.",
+    companyName: "AKASH ENTERPRISE", name: "Akash Radadiya"
+  },
+  {
+    quote: "Navigating the startup landscape can be overwhelming, but Indobright made the process seamless. Their strategic planning and market analysis gave our business a strong foundation. We're now on a clear path to sustainable growth.",
+    companyName:"HRUDANANDA PUHAN NPT PAPERS PVT.LTD.", name: "Hrudananda Puhan",
+  },
+  {
+    quote: "We were contemplating international expansion, and Indobright Services played a crucial role in making it a reality. Their market research, cultural insights, and strategic planning paved the way for a successful expansion. We couldn't be happier with the results.",
+    companyName: "AMRUTAM OILS PRIVATE LTD.", name: "Yashdeep Sharma"
+  },
+  {
+    quote: "The financial advice and planning provided by this Company have been instrumental in our financial success. Their team helped us create a solid financial strategy, manage costs, and optimize our budget. Our bottom line has significantly improved as a result.",
+    companyName: "JAYANT WELDING WORKS", name: "Jayant Kumar Singh"
+  },
+
+  {
+    quote: "We needed to incorporate our business quickly, and Incorporation Service delivered by Indobright was phenomenal. Their prompt response, attention to detail, and reliability made the entire process stress-free. We highly recommend their services to anyone looking to start a new venture.",
+    companyName: "ASIA MACHINE TOOLS PVT LTD.", name: "Guru Siradhana"
+  },
+  {
+    quote: "Working with Indobright Services Pvt Ltd has been a pleasure. Their professionalism and expertise shine through in every interaction. The consultants are knowledgeable, approachable, and truly dedicated to the success of their clients. I highly recommend their services.",
+    companyName: "SHAKTI TRADERS", name: "Siddharth Mishra"
+  },
+  {
+    quote: "Securing funding for our startup was a challenging journey, but Indobright Services was there every step of the way. Their insights into investor expectations, pitch refinement, and networking strategies were pivotal in attracting the right investors.",
+    companyName: "MAHARAJA HOTEL AND RESORTS", name: "Roshan Jha"
+  },
+  {
+    quote: "We owe the successful launch of our startup to the invaluable guidance provided by Indobright Services. From refining our business model to creating a solid go-to-market strategy, their expertise was instrumental. We couldn't be happier with the results.",
+    companyName: "SHREEJI INDUSTRIES", name: "Payal Soni"
+  },
+  {
+    quote: "Beyond the consultancy services, the company provided invaluable mentorship and support. Their team not only helped us with business strategies but also acted as mentors, guiding us through the challenges every startup faces. We're grateful for their ongoing support.",
+    companyName: "AGARWAL TRADING COMPANY", name: "Pankaj Agarwal."
+  },
+  {
+    quote: "We turned to Indobright Business Consultancy for FSSAI certification, and it was the best decision for our business. Their experts provided clear guidance, answered all our queries, and helped us understand the importance of food safety standards. Highly recommended for their expertise and professionalism.",
+    companyName: "PRIMEX AGRO PVT. LTD.", name: "Shubham Raghuwansi."
+  },
+  {
+    quote: "We were on a tight schedule to get our FSSAI certification, and Indobright exceeded our expectations. Their prompt response, attention to deadlines, and thorough understanding of the certification process were commendable. We're grateful for their timely assistance.",
+    companyName: "VEERA FOODS PVT. LTD.", name: "Shobhit Porwal"
+  },
+  {
+    quote: "The expertise of Incorporation Service was evident from the start. Their knowledgeable team guided us through the entire incorporation process, offering valuable insights and ensuring all legal requirements were met. We couldn't be more satisfied with their professionalism.",
+    companyName: "SURBHI EXPORTS PVT. LTD.", name: "Umang Sethi"
+  },
+  {
+    quote: "In the ever-evolving digital landscape, IBS stands out for their adaptive strategies. They stay ahead of industry trends, ensuring our campaigns are always fresh and effective. Their proactive approach keeps us ahead of the competition.",
+    companyName: "3RD EYE CONSULTANCY SERVICES", name: "Pankaj Tiwari"
+  },
+  {
+    quote: "Since partnering with Indobright Services Pvt Ltd, our win rate in tender bids has noticeably increased. Their thorough market analysis, bid optimization, and strategic advice have given us a competitive edge. We appreciate their commitment to our success in the procurement landscape.",
+    companyName: "PRAGATI METAL WORKS", name: "Arun Chakraborty."
+  },
+  {
+    quote: "Ensuring compliance with PSARA regulations was made easy by this Company. Their team provided invaluable support, guiding us through the intricacies of the licensing requirements. We now operate with confidence, knowing we are in full compliance.",
+    companyName: "PREMIER SECURITIES LTD.", name: "Mahesh Jani"
+  },
+]
