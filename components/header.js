@@ -14,6 +14,7 @@ export const Header = () => (
         <Navgitaion />
         <span className="w-[12rem] flex flex-row-reverse">
           <CallUsButton
+            dark
             className="hidden md:flex"
             icon={<IconPhone className="w-4 h-4" />}
           />

@@ -8,6 +8,7 @@ import { Section } from "@/components/section";
 import { FAQS } from "@/components/faqs";
 import { FAQ_PROPS } from "@/content/home";
 import { SERVICE_SLUGS } from "@/content/shared";
+import { Markdown } from "@/components/markdown";
 
 export function generateStaticParams() {
   return SERVICE_SLUGS.map(({ href }) => ({ slug: href.slice(1) }));
@@ -39,7 +40,10 @@ export default function Service({ params }) {
         paper
       >
         <VStack>
+          <Markdown>
+
           {service?.content?.three_description}
+          </Markdown>
         </VStack>
       </Section>
       <FAQS {...FAQ_PROPS} />

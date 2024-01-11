@@ -15,7 +15,7 @@ export default function sitemap() {
       lastModified: new Date(),
     },
     {
-      url: "https://www.indobright.co.in/refund-policy",
+      url: "https://www.indobright.co.in/privacy-policy",
       lastModified: new Date(),
     },
     {

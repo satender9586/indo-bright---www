@@ -46,8 +46,8 @@ export const SECTION_LAST_PROPS = {
 };
 
 export const STATS = [
-  { label: "Incorporations", value: "30+", name: "incorporations" },
-  { label: "Clients", value: "20+", name: "clients" },
-  { label: "Services", value: "40+", name: "services" },
-  { label: "Digital Solutions", value: "55+", name: "digital" },
+  { label: "Incorporations", value: "3K+", name: "incorporations" },
+  { label: "Clients", value: "20K+", name: "clients" },
+  { label: "Services", value: "100+", name: "services" },
+  { label: "Digital Solutions", value: "600+", name: "digital" },
 ]
