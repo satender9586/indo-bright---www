@@ -799,6 +799,9 @@ export const SERVICES = [
       ),
     },
   },
+  /* ============================================================
+     FUNDING SECTION — COMMENTED OUT
+     ============================================================
   {
     label: "Government Grants and Funding",
     category: "Funding",
@@ -1183,6 +1186,9 @@ export const SERVICES = [
       ),
     },
   },
+  ============================================================
+  END FUNDING SECTION
+  ============================================================ */
   {
     label: "Digital Marketing",
     category: "Digital Marketing",
